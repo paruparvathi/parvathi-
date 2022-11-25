@@ -1,0 +1,7 @@
+import re 
+n=input('Enter Mobile number :') 
+pattern=r"([\+?\d][\s?\-]?\(?\d{3}\)?[-\s.()]?(\d{3})[-\s.]?(\d{4}))" 
+if re.match(pattern,n):
+     print('Valid Number')
+else:
+     print('Not a valid number')
